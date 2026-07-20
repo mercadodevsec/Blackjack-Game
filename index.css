@@ -19,7 +19,7 @@ button {
     color: #016f32;
     width: 150px;
     background-color: goldenrod;
-    padding: 5px 5px;
+    padding: 5 5;
     font-weight: bold;
     border: none;
     border-radius: 2px;
@@ -28,21 +28,4 @@ button {
 
 button:hover {
     background-color: gold;
-}
-
-button:active {
-    background-color: yellow;
-}
-
-p {
-    padding: 5px 10px;
-}
-
-#input-el {
-
-    background-color: whitesmoke;
-    margin: auto 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 150px;
-    padding: 5px 5px;
 }
