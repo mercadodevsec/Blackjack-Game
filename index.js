@@ -4,6 +4,7 @@ let playerHasBlackJack = false
 let playerSum = 0
 let playerCards = []
 let playerCardCounter = 0;
+let playerHasMoved = false
 let message = ''
 let bet = 0
 let dealerIsAlive = true
@@ -15,7 +16,10 @@ let dealerCardCounter = 0;
 let player = {
     name: 'You',
     chips: 145,
-    move: 0
+//     move: function() {
+
+//         if ()
+//     }
 }
 
 
@@ -54,6 +58,7 @@ function resetGame() {
     playerCards = []
     playerHasBlackJack = false
     playerCardCounter = 0;
+    playerHasMoved = false
     playerIsAlive = true
     dealerIsAlive = true
     dealerHasBlackJack = false
@@ -85,8 +90,9 @@ function renderGame() {
 
     dealerCardsEl.textContent += ' * ' + dealerCards[1]
     playerSumEl.textContent = 'Sum: ' + playerSum
-    if (playerSum <= 20) {
+    if (playerSum <= 20 && hasMoved) {
         message = 'What is your next move?'
+        playerHasMoved = true
     } else if (playerSum === 21) {
         message = 'Congratulations! You\'ve got Blackjack!'
         player.chips += bet * 2

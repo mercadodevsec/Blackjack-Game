@@ -38,20 +38,12 @@ p {
     padding: 5px 10px;
 }
 
-#inputchips-el {
+input {
 
     background-color: whitesmoke;
     margin: auto 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 100px;
     padding: 5px 5px;
-}
-
-#inputbet-el {
-
-    background-color: whitesmoke;
-    margin: auto 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100px;
-    padding: 5px 5px;
+    box-sizing: border-box;
 }
