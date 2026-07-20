@@ -16,10 +16,18 @@ let dealerCardCounter = 0;
 let player = {
     name: 'You',
     chips: 145,
-//     move: function() {
+    hit: function () {
+        newCard()
+    },
+    stand: function () {
 
-//         if ()
-//     }
+    },
+    double: function () {
+
+    },
+    split: function () {
+
+    }
 }
 
 
@@ -37,35 +45,19 @@ let inputBetEl = document.getElementById('inputbet-el')
 
 inputChipsEl.addEventListener('keydown', function (pressed) {
     if (pressed.key === 'Enter') {
-        let value = parseInt(this.value)
-        player.chips = this.value
+        player.chips = inputChipsEl.value
+        inputChipsEl.value = ''
         playerEl.textContent = `${player.name}: $${player.chips}`
     }
 })
 
 inputBetEl.addEventListener('keydown', function (pressed) {
     if (pressed.key === 'Enter') {
-        let value = parseInt(this.value)
-        bet = this.value
+        bet = inputBetEl.value
+        inputChipsEl.val = ''
     }
 })
 
-
-
-
-function resetGame() {
-    playerSum = 0;
-    playerCards = []
-    playerHasBlackJack = false
-    playerCardCounter = 0;
-    playerHasMoved = false
-    playerIsAlive = true
-    dealerIsAlive = true
-    dealerHasBlackJack = false
-    dealerSum = 0
-    dealerCards = []
-    dealerCardCounter = 0;
-}
 
 function startGame() {
     resetGame()
@@ -87,7 +79,7 @@ function renderGame() {
     for (let i = 0; i < playerCardCounter; i++) {
         playerCardsEl.textContent += ' ' + playerCards[i]
     }
-
+    
     dealerCardsEl.textContent += ' * ' + dealerCards[1]
     playerSumEl.textContent = 'Sum: ' + playerSum
     if (playerSum <= 20 && hasMoved) {
@@ -124,3 +116,17 @@ function getRandomCard() {
     else return randNum
 }
 
+
+function resetGame() {
+    playerSum = 0;
+    playerCards = []
+    playerHasBlackJack = false
+    playerCardCounter = 0;
+    playerHasMoved = false
+    playerIsAlive = true
+    dealerIsAlive = true
+    dealerHasBlackJack = false
+    dealerSum = 0
+    dealerCards = []
+    dealerCardCounter = 0;
+}

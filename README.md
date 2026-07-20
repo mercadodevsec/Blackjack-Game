@@ -1,79 +1,41 @@
 # Blackjack Game
 
-A simple, interactive Blackjack card game built with vanilla HTML, CSS, and JavaScript.
+A simple browser Blackjack project built with vanilla HTML, CSS, and JavaScript. This version is still a work in progress and not yet complete.
 
 ## Overview
 
-This is a browser-based implementation of the classic Blackjack card game. Players attempt to get a hand value of 21 or as close as possible without going over, competing against the deck.
+This project is an unfinished browser-based Blackjack game. The current version lets a player draw cards and watch their hand total, but several features and polish remain incomplete.
 
-## Features
+## Current Behavior
 
-- 🎴 Draw cards and build your hand
-- 💰 Manage your chip balance
-- 🎯 Win with Blackjack (exactly 21)
-- 🎨 Beautiful themed UI with styling effects
-- ⚡ Fast and responsive gameplay
+- Draws cards and calculates the player hand total
+- Handles chip input and basic game flow
+- Detects Blackjack and bust conditions
+- Updates messages and game status in the UI
 
-## How to Play
+## What’s Still Missing
 
-1. **Set Your Chips**: Enter the amount of chips (money) you want to play with in the input field.
-2. **Start Game**: Click the "START GAME" button to deal 2 initial cards.
-3. **Draw Cards**: Click "NEW CARD" to draw additional cards.
-4. **Win Conditions**:
-   - Get exactly **21** → Blackjack! You win!
-   - Get closer to 21 than busting → You're still in the game
-   - Go over **21** → You're out of the game (bust)
+- Full dealer AI or opponent logic
+- Persistent game rounds and score tracking
+- Advanced betting, win/loss history, and chip management
+- Mobile-first responsive layout improvements
+- Animations, sounds, and richer user feedback
 
-## Game Rules
+## How to Use
 
-- Number cards (2-10) are worth their face value
-- Face cards (Jack, Queen, King) are worth 10
-- Aces can be worth 1 or 11 (treated as 11 when possible and safe)
-- If your sum exceeds 21, you bust and lose
-- If you reach exactly 21, you achieve Blackjack and win immediately
-- You cannot draw new cards after reaching Blackjack or busting
+1. Open `index.html` in your browser
+2. Enter starting chips
+3. Click **START GAME** to deal cards
+4. Click **NEW CARD** to draw additional cards
 
-## Project Structure
+## Project Files
 
-```
-Blackjack Game/
-├── index.html      # Game UI and HTML structure
-├── index.css       # Styling and visual effects
-├── index.js        # Game logic and functionality
-├── images/         # Game assets
-│   └── background.jpg
-└── README.md       # This file
-```
+- `index.html` — game structure and controls
+- `index.css` — styles and layout
+- `index.js` — current Blackjack logic
+- `images/` — project assets
+- `README.md` — project documentation
 
-## Getting Started
+## Notes
 
-1. Open `index.html` in your web browser
-2. The game will load with the default UI
-3. Enter your starting chips and click "START GAME"
-4. Enjoy!
-
-## Technologies Used
-
-- **HTML5**: Semantic markup and structure
-- **CSS3**: Styling, hover effects, and responsive design
-- **JavaScript (Vanilla)**: Game logic, card generation, and DOM manipulation
-
-## Browser Compatibility
-
-Works on all modern browsers that support:
-- ES6 JavaScript
-- CSS3
-- HTML5
-
-## Future Enhancements
-
-Potential features for future versions:
-- Dealer AI
-- Multiple rounds tracking
-- Chip history/statistics
-- Mobile responsive design improvements
-- Sound effects
-- Card animations
-
-
-Enjoy the game! 🎰
+This is not a finished release. The project is still under development and needs more game rules, UI polish, and completion of the Blackjack experience.

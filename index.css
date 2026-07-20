@@ -15,7 +15,6 @@ body {
 }
 
 button {
-    display: block;
     color: #016f32;
     width: 150px;
     background-color: goldenrod;
@@ -23,7 +22,13 @@ button {
     font-weight: bold;
     border: none;
     border-radius: 2px;
-    margin: 4px auto;
+    margin: 4px 5px;
+}
+
+#playermenu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 button:hover {
@@ -36,10 +41,10 @@ button:active {
 
 p {
     padding: 5px 10px;
+    margin: 10px;
 }
 
 input {
-
     background-color: whitesmoke;
     margin: auto 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
