@@ -9,12 +9,17 @@
         Blackjack
     </h1>
     <p id='message-el'>Want to play a round?</p>
-    <p id='cards-el'>Cards:</p>
-    <p class='sum-el'>Sum:</p>
+    <p id='player-cards-el'>Your cards:</p>
+    <p id='dealer-cards-el'>Dealer's cards:</p>
+    <p class='player-sum-el'>Your sum:</p>
+    <p class='dealer-sum-el'>Dealer's sum:</p>
     <button id='startgame-el' onclick='startGame()'>START GAME</button>
     <button id='newcard-el' onclick='newCard()'>NEW CARD</button>
     <div>
-        <p>Enter the amount of chips: $<input id="input-el" type="number" min="0"></p>
+        <p>Enter the amount of chips: $<input id="inputchips-el" type="number" min="0"></p>
+    </div>
+    <div>
+        <p>Your bet: $<input id="inputbet-el" type="number" min="0"></p>
     </div>
     <h3  id='player-el'></h3>
     <script src='index.js'></script>
