@@ -2,7 +2,7 @@
 let playerIsAlive = true
 let playerHasBlackJack = false
 let playerSum = 0
-let playerCards = []
+const playerCards = []
 let playerCardCounter = 0;
 let playerHasMoved = false
 let message = ''
@@ -10,7 +10,7 @@ let bet = 0
 let dealerIsAlive = true
 let dealerHasBlackJack = false
 let dealerSum = 0
-let dealerCards = []
+const dealerCards = []
 let dealerCardCounter = 0;
 
 let player = {
@@ -124,7 +124,7 @@ function getRandomCard() {
 
 function resetGame() {
     playerSum = 0;
-    playerCards = []
+    playerCards.length = 0
     playerHasBlackJack = false
     playerCardCounter = 0;
     playerHasMoved = false
@@ -132,6 +132,6 @@ function resetGame() {
     dealerIsAlive = true
     dealerHasBlackJack = false
     dealerSum = 0
-    dealerCards = []
+    dealerCards.length = 0
     dealerCardCounter = 0;
 }
