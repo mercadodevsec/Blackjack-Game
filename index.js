@@ -76,13 +76,18 @@ function startGame() {
 
 function renderGame() {
     playerCardsEl.textContent = 'Cards:'
+    dealerCardsEl.textContent = 'Cards:'
+
     for (let i = 0; i < playerCardCounter; i++) {
         playerCardsEl.textContent += ' ' + playerCards[i]
     }
-    
-    dealerCardsEl.textContent += ' * ' + dealerCards[1]
+
+    dealerCardsEl.textContent += " * " + dealerCards[1]
+
+
     playerSumEl.textContent = 'Sum: ' + playerSum
-    if (playerSum <= 20 && hasMoved) {
+
+    if (playerSum <= 20 && !playerHasMoved) {
         message = 'What is your next move?'
         playerHasMoved = true
     } else if (playerSum === 21) {
